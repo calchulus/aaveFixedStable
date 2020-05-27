@@ -12,9 +12,9 @@ With current parameters getStableRateSlope1 as 600000000000000000000000000 uint2
 ```
 7 - SQRT(6500)/SQRT(91000) = 7 - 0.267 = 6.733 =  Fixed1dayStableSlope1
 
-7 - SQRT(45500)/SQRT(91000) = 7 - 0.707 = 6.293 =  Fixed1dayStableSlope1
+7 - SQRT(45500)/SQRT(91000) = 7 - 0.707 = 6.293 =  Fixed1weekStableSlope1
 ```
-Thus, we can have interest rates that are strictly lower than the fully flexible interest rate as outlined here, reducing the spread between fixed and variable.
+Thus, we can have interest rates that are strictly lower than the fully flexible interest rate as outlined here, reducing the spread between fixed and variable. This would mean that 1day rates would be much closer to the variable rates (almost a 70% discount), and 1 week ones would have about a 30% discount compared to current stable rates.
 
 
 A sample Borrow function as below 
