@@ -27,3 +27,6 @@ A sample Borrow function as below
 ```
 
 Repayment remains the same in the flow
+
+The function **swapBorrowRateMode()** would need to be upgraded to take in one parameter, which is the desired rateMode, either 1 (stable), 2(variable), 3 (fixedday) , or 4 (fixedweek).
+
