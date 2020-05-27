@@ -6,7 +6,7 @@ A sample Borrow function as below
  async function borrow() {
     const daiAmountinWei = web3.utils.toWei("1000", "ether").toString()
     const daiAddress = "0x6B175474E89094C44Da98b954EedeAC495271d0F" // mainnet DAI
-    const interestRateMode = 3 // fixed-daily-term stable-rate; select 4 for fixed-weekly-term stable-rate
+    **const interestRateMode = 3 // fixed-daily-term stable-rate; select 4 for fixed-weekly-term stable-rate**
     const referralCode = "0"
 
     try {
