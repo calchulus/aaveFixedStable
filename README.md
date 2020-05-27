@@ -9,11 +9,11 @@ With 13.3 second average block times currently on Ethereum, we can create a 6500
 
 Thus, using the block times as 6500 blocks and 45500 blocks for 1 day and 1 week terms, respectively, and that the volatility of underlying assets grows with the square root of time,  we can create start with a simple weighted square rooot to give two more different slopes for these borrow rates. 
 With current parameters getStableRateSlope1 as 600000000000000000000000000 uint256, and getVariableRateSlope2 as 70000000000000000000000000 uint256, I suggest we treat 2 weeks as "infinite time stable", one month might really be an eternity in crypto, but two weeks will be helpful for a safer parameter here in testing.
-'''
+```
 7 - SQRT(6500)/SQRT(91000) = 7 - 0.267 = 6.733 =  Fixed1dayStableSlope1
 
 7 - SQRT(45500)/SQRT(91000) = 7 - 0.707 = 6.293 =  Fixed1dayStableSlope1
-'''
+```
 Thus, we can have interest rates that are strictly lower than the fully flexible interest rate as outlined here, reducing the spread between fixed and variable.
 
 
